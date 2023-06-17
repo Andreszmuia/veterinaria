@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarCita">
+
+    <EditText
+        android:id="@+id/etNomMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/tvNomDueno"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomMascota" />
+
+    <EditText
+        android:id="@+id/etNomDueno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/tvRazaMascota"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomDueno" />
+
+    <EditText
+        android:id="@+id/etRazaMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/tvEdadMascota"
+        app:layout_constraintTop_toBottomOf="@+id/tvRazaMascota" />
+
+    <EditText
+        android:id="@+id/etEdadMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/tvHoraCita"
+        app:layout_constraintTop_toBottomOf="@+id/tvEdadMascota" />
+
+    <EditText
+        android:id="@+id/etHoraCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/tvDescripcionCita"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoraCita" />
+
+    <EditText
+        android:id="@+id/etDescripcionCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/tvFotoMascota"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcionCita" />
+
+    <TextView
+        android:id="@+id/tvNomMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre de la mascota"
+        app:layout_constraintStart_toStartOf="@+id/etNomMascota"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNomDueno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nombre del dueño"
+        app:layout_constraintStart_toStartOf="@+id/etNomDueno"
+        app:layout_constraintTop_toBottomOf="@+id/etNomMascota" />
+
+    <TextView
+        android:id="@+id/tvRazaMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Raza"
+        app:layout_constraintStart_toStartOf="@+id/etRazaMascota"
+        app:layout_constraintTop_toBottomOf="@+id/etNomDueno" />
+
+    <TextView
+        android:id="@+id/tvEdadMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Edad de la mascota"
+        app:layout_constraintStart_toStartOf="@+id/etEdadMascota"
+        app:layout_constraintTop_toBottomOf="@+id/etRazaMascota" />
+
+    <TextView
+        android:id="@+id/tvHoraCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Hora de la cita"
+        app:layout_constraintStart_toStartOf="@+id/etHoraCita"
+        app:layout_constraintTop_toBottomOf="@+id/etEdadMascota" />
+
+    <TextView
+        android:id="@+id/tvDescripcionCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Descripción de la cita"
+        app:layout_constraintStart_toStartOf="@+id/etDescripcionCita"
+        app:layout_constraintTop_toBottomOf="@+id/etHoraCita" />
+
+    <TextView
+        android:id="@+id/tvFotoMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Foto de la mascota"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/etDescripcionCita" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvFotoMascota"
+        tools:layout_editor_absoluteX="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
